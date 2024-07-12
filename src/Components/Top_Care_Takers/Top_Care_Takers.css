@@ -1,0 +1,75 @@
+.top-care-takers h1 {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.top-care-takers {
+  padding: 20px;
+}
+
+.care-takers-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center; /* Center cards horizontally */
+  gap: 20px; /* Adjust spacing between cards */
+  max-width: 1200px; /* Limit maximum width of the container */
+  margin: 0 auto; /* Center align container */
+}
+
+.care-takers-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  flex: 1 1 calc(25% - 20px); /* Adjust card width for larger screens */
+  max-width: 250px; /* Limit maximum width of each card */
+}
+
+.care-takers-card-image {
+  width: 100%; /* Make the image fit the card's width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Set a maximum height for the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.care-takers-card-heading {
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+
+.care-takers-card-description {
+  font-size: 0.9em;
+  color: #666; /* Slightly muted color for description */
+}
+
+.care-takers-card-rating {
+  font-size: 1.2em;
+  color: #2563eb; /* Blue color for star ratings */
+}
+
+/* Media Queries */
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+  .care-takers-card {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust card width for medium screens */
+  }
+}
+
+/* For small screens (mobile devices) */
+@media (max-width: 768px) {
+  .care-takers-card {
+    flex: 1 1 calc(50% - 20px); /* Adjust card width for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .care-takers-card {
+    flex: 1 1 calc(100% - 20px); /* Full width for one card per row on very small screens */
+  }
+}
