@@ -13,6 +13,8 @@ import CareTakerProfile from './Components/CareTakerDashboard/CareTaker_Profile'
 import CareReciverDashboard from './Components/CareRecieverDashboard/CareRecieverDashboard';
 import CareReciverProfile from './Components/CareRecieverDashboard/CareReciever_Profile';
 import CareTakerCash from './Components/CareRecieverDashboard/CareTakerCash';
+import CareRecieverChat from './Components/CareRecieverDashboard/CareReciever_Chat';
+import CareTakerChat from './Components/CareTakerDashboard/CareTaker_Chat'
 import CareReceiver_Call from './Components/CareRecieverDashboard/CareReceiver_Call';
 
 function App() {
@@ -29,12 +31,14 @@ function App() {
 
           <Route path="/CareTaker-dashboard" element={<CareTakerDashboard />} />
           <Route path="/CareTaker-dashboard/profile" element={<CareTakerProfile />} />
+          <Route path="/CareTaker-dashboard/CareTaker_Chat" element={<CareTakerChat/>} />
 
 
           <Route path="/CareRecipent-dashboard" element={<CareReciverDashboard />} />
           <Route path="/CareRecipent-dashboard/call" element={<CareReceiver_Call />} />
           <Route path="/CareRecipent-dashboard/profile" element={<CareReciverProfile />} />
           <Route path="/CareRecipent-dashboard/caretakerCash" element={<CareTakerCash/>} />
+          <Route path="/CareRecipent-dashboard/CareReciever_Chat" element={<CareRecieverChat/>} />
 
         </Routes>
       </div>
