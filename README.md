@@ -47,4 +47,3 @@ The backend is hosted on [Render](https://render.com/).
 
 Render is a cloud platform that provides a streamlined way to deploy and manage applications and services. It is not based on AWS but is an independent platform that offers similar functionality. Render abstracts away much of the complexity involved in deploying applications, making it easier for developers to get their projects online quickly.
 
-# lovecare
